@@ -8,8 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 public class LoggedUserPage {
 
     //@FindBy(xpath = "//h1[@class='entry-title']")
+    //@FindBy(linkText = "Dashboard")
     @FindBy(xpath = "//*[@id='page-7']/div/section/div/div/div/p[1]/a")
     private WebElement entryTitle;
+
+
 
     private  WebDriver driver;
     public LoggedUserPage(WebDriver driver) {
@@ -19,4 +22,5 @@ public class LoggedUserPage {
     public WebElement getEntryTitle(){
         return entryTitle;
     }
+
 }

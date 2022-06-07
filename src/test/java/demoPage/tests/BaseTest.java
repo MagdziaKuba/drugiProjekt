@@ -16,7 +16,7 @@ public class BaseTest {
     public void setup(){
         driver=DriverFactory.getDriver();
         driver.get("http://seleniumdemo.com/");
-        driver.manage().window().fullscreen();
+        driver.manage().window().maximize();
     }
 
     @AfterMethod
