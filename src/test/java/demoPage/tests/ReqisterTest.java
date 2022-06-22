@@ -28,4 +28,5 @@ public class ReqisterTest extends BaseTest{
         Assert.assertEquals(errors.getText(),"Error: An account is already registered with your email address. Please log in.");
         Assert.assertTrue(errors.getText().contains("Error"));
     }
+
 }
